@@ -1,1 +1,1 @@
-# Eternals-Modern-Website-Design
+# goit-markup-hw-02
