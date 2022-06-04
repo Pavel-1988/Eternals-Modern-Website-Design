@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins"  sans-serif;
+  font-family: "Poppins" sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 .banner {
@@ -38,14 +41,14 @@ header {
 }
 
 header .logo img {
-  max-width: 200px;
+  max-width: 100px;
 }
 
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 
 header ul li {
@@ -73,7 +76,7 @@ header ul li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px;
+  padding: 50px;
 }
 
 .banner .content .contentBox {
@@ -84,7 +87,93 @@ header ul li a:hover {
   width: 100%;
 }
 
-.contentBox {
-  margin: 60px;
+.banner .content .contentBox p {
+  margin-top: -30px;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+.banner .content .contentBox .btn {
+  display: inline-block;
+  font-size: 1.1em;
+  color: #333;
+  background: #fff;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.banner .content .contentBox .btn:hover {
+  letter-spacing: 2px;
+}
+
+.sci {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: centre;
+      -ms-flex-pack: centre;
+          justify-content: centre;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.sci h3 {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+sci li {
+  list-style: none;
+}
+
+sci li img {
+  max-width: 30px;
+}
+
+.banner .images {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner .images .imgBx {
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  background: #ff0;
+}
+
+.banner .images .imgBx:nth-child(2) {
+  background: #f00;
+}
+
+.banner .images .imgBx:nth-child(3) {
+  width: 100%;
+  background: #0ff;
+}
+
+.banner .images .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
