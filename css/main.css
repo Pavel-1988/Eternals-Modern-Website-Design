@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Poppins" sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -175,5 +175,28 @@ sci li img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .banner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header {
+    padding: 20px 40px;
+  }
+  .banner .content {
+    padding: 40px;
+    height: 70vh;
+  }
+  .sci {
+    right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner .images .imgBx {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
